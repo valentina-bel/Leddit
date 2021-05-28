@@ -20,4 +20,4 @@ class Vote(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.voter
+        return self.voter.username
